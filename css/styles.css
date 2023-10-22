@@ -13,9 +13,6 @@
 	list-style: none;
 }
 
-img {
-	width: 100%;
-}
 
 
 body {
@@ -123,6 +120,17 @@ body {
 	opacity: 0;
 }
 
+.container-nav {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1134px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	align-items: center;
+
+}
+
 
 /* main screen */
 
@@ -130,7 +138,7 @@ body {
 .home {
 	background-image: url(https://wallpapers.com/images/hd/hd-country-life-at-night-vvxmbqzkr4uumuni.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: auto;
 	height: 100vh;
 	padding-top: 20.5rem;
 }
@@ -142,7 +150,7 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 	position: relative;
-	justify-content: space-between;
+	justify-content: center;
 
 }
 
@@ -151,7 +159,7 @@ body {
 	max-width: 649px;
 	width: 100%;
 	left: -3rem;
-	grid-template-columns: 1fr;
+	word-wrap: break-word;
 }
 
 .maintext h1 {
@@ -160,6 +168,7 @@ body {
 	font-weight: 800;
 	text-transform: uppercase;
 	font-family: Vela Sans;
+	line-height: 1.2rem;
 }
 
 .maintext h2 {
@@ -168,7 +177,8 @@ body {
 	font-family: Neucha;
 	font-weight: 400;
 	text-transform: uppercase;
-    padding-top: 3.5rem ;
+  padding-top: 3.5rem ;
+  line-height: 1.2rem;
 }
 
 .maintext p {
@@ -331,56 +341,113 @@ body {
 /* how it works section  */
 
 .howit {
+	min-height: 100vh;
+	width: 100%;
 	background-color: #0441CF;
-	background-size: 100vh;
-	height: 100vh;
+	background-size: cover;
 }
 
 .container-how {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-auto-rows: auto;
+	max-width: 1134px;
+	display: grid; 
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 
+	'notebook notebook ' 
+	'advtext 	howtext' ;
 	margin: auto;
+	text-align: left;
 }
 
 .notebook {
 	padding-top: 80px;
-	grid-column: 1/2;
-	grid-row: 1;
+	grid-area: notebook;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+
+.notebook img {
+	width: 100%;
+	height: 100%;
 }
 
 .advtext2 {
-	padding-top: 140px;
-	grid-column: 1/1;
-  grid-row: 2/1;
+	grid-area: advtext;
 }
 
 .howtext {
-
+	grid-area: howtext;
+	
 }
 
 .advtext2 h2 {
+	color: #fff;
+	font-size: 40px;
+	font-family: Vela Sans;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.3rem;
+}
+
+.advtext2 h3 {
+	color: #fff;
+	font-size: 40px;
+	font-family: Neucha;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1.3rem;
+	padding-top: 1rem;
+}
+
+.advtext2 div {
+	opacity: 0;
+}
+
+.howtext p {
+	color: #fff;
+	line-height: 1.3rem;
+	padding-bottom: 1rem;
+}
+
+
+/* company screen */
+
+.company {
+	padding-top: 150px;
+}
+
+.capabilities-accordion h2 {
 	color: #424242;
 	font-size: 40px;
 	font-family: Vela Sans;
 	font-weight: 800;
 	text-transform: uppercase;
+	word-wrap: break-word
 }
 
-.advtext2 h2 span {
+.capabilities-accordion h3 {
 	color: #424242;
 	font-size: 40px;
 	font-family: Neucha;
 	font-weight: 400;
 	text-transform: uppercase;
-
+	letter-spacing: 2px;
+	word-wrap: break-word
 }
 
-.howtext p {
-	color: #424242;
-	padding-top: 3rem;
-	line-height: 1.3rem;
+
+
+/* footer ТОЛЬКО НАЧАЛ */
+
+
+
+.footer {
+  padding-top: 200px;
 }
 
-/* СДЕЛАТЬ БУРГЕР И НОРМАЛЬНЫЙ АДАПТИВ */
+.infoline1 {
+	display: inline-flex;
+	align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
