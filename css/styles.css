@@ -440,14 +440,105 @@ body {
 
 
 
+.footer-content {
+	max-width: 1134px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+
 .footer {
-  padding-top: 200px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .infoline1 {
-	display: inline-flex;
+	display: flex;
+	height: 59px;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%;
 	align-items: center;
-  position: relative;
-  flex: 0 0 auto;
 }
 
+.infoline1 h5 {
+	font-size: 16px;
+	font-weight: 400;
+	color: #424242;
+}
+
+.infoline1 p {
+	font-size: 20px;
+	font-family: "Vela Sans";
+	font-weight: 700;
+	color: #424242;
+}
+
+
+.infoline2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.line2item1 {
+	position: relative;
+	left: -14px;
+}
+
+.line2item2 {
+	display: inline-flex;
+	align-items: flex-start;
+	gap: 5px;
+	position: relative;
+}
+
+.footer-icons {
+	height: 50px;
+	width: 50px;
+}
+
+.footer-icon1 {
+	width: 50px;
+	height: 50px;
+	background-color: #92a3fe;
+	border-radius: 10px;
+	background-image: url(../src/telegram.svg);
+	background-size: 100% 100%;
+}
+
+.footer-icon2 {
+	width: 50px;
+	height: 50px;
+	background-color: #92a3fe;
+	border-radius: 10px;
+	background-image: url(../src/vk.svg);
+	background-size: 100% 100%;
+}
+
+.footer-icon3 {
+	width: 50px;
+	height: 50px;
+	background-color: #92a3fe;
+	border-radius: 10px;
+	background-image: url(../src/whatsapp.svg);
+	background-size: 100% 100%;
+}
+
+.infoline3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.infoline3 p {
+	color: #414141;
+}
