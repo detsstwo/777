@@ -123,7 +123,8 @@ body {
 .container-nav {
 	display: flex;
 	justify-content: space-between;
-	max-width: 1134px;
+	max-width: 1164px;
+	padding: 0 15px;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -144,7 +145,7 @@ body {
 }
 
 .container {
-	max-width: 1134px;
+	max-width: 1164px;
 	width: 100%;
 	display: flex;
 	margin: 0 auto;
@@ -348,7 +349,9 @@ body {
 }
 
 .container-how {
-	max-width: 1134px;
+	max-width: 1164px;
+	padding: 0 15px;
+	width: 100%;
 	display: grid; 
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas: 
@@ -436,7 +439,7 @@ body {
 
 
 
-/* footer ТОЛЬКО НАЧАЛ */
+/* footer */
 
 
 
