@@ -23,6 +23,12 @@
  	.advantages {
  	grid-template-columns: 1fr 1fr;
  	}
+ 	.container-feedback {
+ 	grid-template-columns: 1fr;
+	grid-template-areas:
+	'feedback-text'
+	'feedback-form';
+ 	}
 }
 
 @media (max-width: 768.98px) {
